@@ -1,0 +1,18 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12">
+			<h1>Arenas</h1>
+			<ul>
+				<li ng-repeat="arena in arenas"><a ng-href="/angular/#!/arenas/{{arena._id}}">{{arena.name}}</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<h1>Cards</h1>
+			<ul>
+				<li ng-repeat="card in cards"><a ng-href="/angular/#!/cards/{{card._id}}">{{card.name}}</a></li>
+			</ul>
+		</div>
+	</div>
+</div>

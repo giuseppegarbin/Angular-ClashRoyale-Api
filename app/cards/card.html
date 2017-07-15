@@ -1,0 +1,21 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-4 col-xs-offset-4">
+			<div class="panel panel-default panel-{{card.rarity}}">
+				<div class="panel-heading"><strong>{{card.name}}</strong></div>
+				<div class="panel-body">
+					<div class="text-center">
+						<img ng-src="/angular/assets/img/cards/{{card.idName}}.png" ng-alt="{{card.name}}">
+					</div>
+					<h4>{{card.description}}</h4>
+					<p>
+						<strong>Elixir cost: </strong><span class="label label-danger">{{card.elixirCost}}</span><br/>
+						<strong>Rarity: </strong>{{card.rarity}}<br/>
+						<strong>Type: </strong>{{card.type}}<br/>
+						<strong>Availabe from: </strong>Arena {{card.arena}}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

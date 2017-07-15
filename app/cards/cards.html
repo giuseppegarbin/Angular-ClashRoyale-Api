@@ -1,0 +1,13 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-3" ng-repeat="card in cards">
+			<div class="panel panel-default">
+				<div class="panel-heading"><strong>{{card.name}}</strong></div>
+				<div class="panel-body">
+					<img ng-src="/angular/assets/img/cards/{{card.idName}}.png" ng-alt="{{card.name}}">
+				</div>
+				<div class="panel-footer"><a ng-href="/angular/#!/cards/{{card._id}}">Details</a></div>
+			</div>
+		</div>
+	</div>
+</div>
